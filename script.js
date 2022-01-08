@@ -1,7 +1,5 @@
 // get your key from app.tomorrow.io/development/keys
-// const API_KEY = 'Kc4HFO75TNUmBRla3S661V2DkxJb4uiS'; 
 
-const API_KEY = '5cd9PC6XXUzZ6XeQ5tNev20YU7DoBs08'
 // pick the field (like temperature, precipitationIntensity or cloudCover)
 const DATA_FIELD = 'humidity';
 
