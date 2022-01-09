@@ -22,7 +22,7 @@ res.addEventListener('keypress',(e)=>{
   if(e.key==='Enter'){
     // console.log(e.target.value)
 
-    fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${e.target.value}&key=AIzaSyDhhp2Bfb9ouzAt-xVnoOCIkKgWwyfXJDA`)
+    fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${e.target.value}&key=${MAPS_API}`)
     .then(res=>res.json())
     .then(obj=>{
       const latitude = obj.results[0].geometry.location.lat
