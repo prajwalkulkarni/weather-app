@@ -3,38 +3,36 @@
   <head>
     <title>Simple Map</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <link rel="stylesheet" href="styles.css"/>
-    <!-- <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.css' rel='stylesheet' /> -->
+    <link rel="stylesheet" href="./assets/css/styles.css"/>
+    
   </head>
   <body>
 
     <div class="container">
+
+      <p style="font-size: 5rem;font-family: Arial, Helvetica, sans-serif;"><b>Weather Man</b></p>
       <input type="search" placeholder="Search for a place..." id="search"/>
       
         
           <div class="card">
             <div>
-              <h3 id="weather">Weather: </h3>
-            <h4 id="temperature">Temperature: 69 C</h4>
-            <h4 id="humidity">Humidity: what niffa</h4>
+                <h1 id="weather">Weather: </h3>
+                <h4 id="temperature">Temperature: 69 C</h4>
+                <h4 id="humidity">Humidity: 25%</h4>
             </div>
 
-            <img src="./assets/images/default.png" height="100" width="100"/>
+            <img src="./assets/images/normal.png" height="100" width="100"/>
           </div>
           <div id="map"></div>  
 
-       
       
     </div>
     
-    
-
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=API-KEY-HERE&callback=initMap&libraries=&v=weekly"
+      src="https://maps.googleapis.com/maps/api/js?key=MAPS_API_KEY_HERE&callback=initMap&libraries=&v=weekly"
       async
     ></script>
-    <script src="script.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
